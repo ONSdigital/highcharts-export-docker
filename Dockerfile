@@ -14,6 +14,7 @@ WORKDIR exporting-server/java/highcharts-export/
 RUN mvn install
 
 # Jetty Runner
+# NB we use a slightly older Jetty version because this one is compiled with Java 7 and the base image is a Java 7 image:
 ADD http://central.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.2.11.v20150529/jetty-runner-9.2.11.v20150529.jar jetty-runner.jar
 EXPOSE 8080
 
