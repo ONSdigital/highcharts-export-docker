@@ -1,4 +1,4 @@
-from carboni/java-phantom-component
+from onsdigital/java-phantom-component
 
 # Highcharts
 WORKDIR /usr/highcharts
