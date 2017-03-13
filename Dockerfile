@@ -3,7 +3,7 @@ from node:7.7.2
 ENV ACCEPT_HIGHCHARTS_LICENSE="YES"
 RUN npm install highcharts-export-server -g 
 
-WORKDIR /fonts/usr/share/fonts
+WORKDIR /usr/share/fonts/truetype
 ADD https://github.com/google/fonts/raw/master/apache/opensans/OpenSans-Regular.ttf OpenSans-Regular.ttf
 ADD https://github.com/google/fonts/raw/master/apache/opensans/OpenSans-Light.ttf OpenSans-Light.ttf
 ADD https://github.com/google/fonts/raw/master/apache/opensans/OpenSans-Semibold.ttf OpenSans-Semibold.ttf
